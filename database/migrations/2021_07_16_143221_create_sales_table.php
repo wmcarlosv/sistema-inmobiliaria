@@ -20,7 +20,7 @@ class CreateSalesTable extends Migration
             $table->integer('bed_rooms')->nullable(false);
             $table->text('description')->nullable(false);
             $table->unsignedBigInteger('city_id');
-            $table->text('location')->nullable(false);p
+            $table->text('location')->nullable(false);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('restrict');
